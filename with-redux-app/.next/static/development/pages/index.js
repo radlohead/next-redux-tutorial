@@ -7179,7 +7179,7 @@ function initializeStore() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!**************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fminho%2FDesktop%2Fdev%2Freact-next%2Fwith-redux-app%2Fpages%2Findex.js ***!
   \**************************************************************************************************************************************************/
@@ -7202,5 +7202,5 @@ module.exports = dll_d346b9d5e7f8e3f71f40;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
