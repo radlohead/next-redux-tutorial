@@ -111,11 +111,7 @@
 		],
 		"deprecation": true,
 		"eofline": false,
-		"indent": [
-			true,
-			"tabs",
-			4
-		],
+		"indent": false,
 		"linebreak-style": [
 			false,
 			"LF"
