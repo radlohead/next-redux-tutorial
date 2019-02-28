@@ -1,8 +1,4 @@
-const checkSignInStatus = (reqDataObj: any) => ({
+export const checkSignInStatus = (reqDataObj: any) => ({
     type: 'checkSignInStatus',
     id: reqDataObj.id
   });
-  
-  module.exports = {
-    checkSignInStatus
-  };

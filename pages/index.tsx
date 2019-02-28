@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators, Dispatch } from 'redux';
+import * as actions from '../src/actions';
 
-class Index extends Component {
+type regDataObj = {
+    type?: string, 
+    id: string
+}
+
+interface IIndexProps {
+    checkSignInStatus(regDataObj: regDataObj): void;
+}
+
+class Index extends Component<IIndexProps, {}> {
+    constructor(props: any) {
+        super(props);
+        this.props.checkSignInStatus({id: 'testId'});
+    }
     render() {
         const { members }: any = this.props;
         return (
@@ -21,4 +36,10 @@ const mapStateToProps = (state: any) => {
     };
 }
 
-export default connect(mapStateToProps)(Index);
+const mapDispatchToProps = (dispatch: Dispatch<any>) => {
+    return {
+        checkSignInStatus: bindActionCreators(actions.checkSignInStatus, dispatch)
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Index);
